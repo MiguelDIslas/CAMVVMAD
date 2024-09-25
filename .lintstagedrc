@@ -2,6 +2,7 @@
   "*.{ts,tsx,js,jsx}": [
     "prettier --write",
     "eslint --fix",
+    "yarn check-rules",
     "git add"
   ],
   "*.{html,css,less,ejs,json}": ["prettier --write", "git add"]

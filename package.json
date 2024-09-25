@@ -12,7 +12,8 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix",
     "format": "yarn prettier && yarn lint:fix",
-    "postinstall": "node -e \"require('fs').copyFileSync('.env.example', '.env')\""
+    "postinstall": "node -e \"require('fs').copyFileSync('.env.example', '.env')\"",
+    "check-rules": "node scripts/pre-commit.js"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "^2.0.0",
