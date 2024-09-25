@@ -7,11 +7,12 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest -u",
+    "prepare": "husky",
     "prettier": "prettier --write \"./**/*.{js,ts,jsx,tsx}\"",
     "lint": "eslint .",
     "lint:fix": "eslint --fix",
     "format": "yarn prettier && yarn lint:fix",
-    "postinstall": "node -e \"require('fs').copyFileSync('.env.example', '.env', fs.constants.COPYFILE_EXCL)\""
+    "postinstall": "yarn prepare && node -e \"require('fs').copyFileSync('.env.example', '.env', fs.constants.COPYFILE_EXCL)\""
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "^2.0.0",
@@ -52,6 +53,7 @@
     "husky": "^9.1.6",
     "jest": "^29.6.3",
     "jest-styled-components": "^7.2.0",
+    "lint-staged": "^15.2.10",
     "prettier": "2.8.8",
     "react-test-renderer": "18.3.1",
     "typescript": "5.0.4"
