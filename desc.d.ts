@@ -1,0 +1,10 @@
+declare module '*.json';
+declare module '*.jpg';
+declare module '*.gif';
+declare module '*.png';
+declare module '*.ttf';
+declare module '*.otf';
+declare module '*.woff';
+declare module '*.woff2';
+declare module '*.eot';
+declare module '*.html';

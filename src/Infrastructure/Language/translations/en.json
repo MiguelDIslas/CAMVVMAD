@@ -1,0 +1,12 @@
+{
+  "continue": "Continue",
+  "login": "Login",
+  "greeting": {
+    "user": "Hello, {name}",
+    "morning": "Good morning",
+    "afternoon": "Good afternoon",
+    "evening": "Good evening",
+    "night": "Good night"
+  },
+  "loading": "Loading..."
+}

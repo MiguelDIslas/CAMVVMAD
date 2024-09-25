@@ -1,3 +1,40 @@
 {
-  "extends": "@react-native/typescript-config/tsconfig.json"
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "jsx": "react-jsx",
+  "compilerOptions": {
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "@Assets/*": ["assets/*"],
+
+      "@Redux/*": ["src/Application/Redux/*"],
+      "@Services/*": ["src/Application/Services/*"],
+      "@UseCases/*": ["src/Application/UseCases/*"],
+
+      "@DTO/*": ["./src/Domain/DTO/*"],
+      "@Entities/*": ["./src/Domain/Entities/*"],
+      "@Enum/*": ["./src/Domain/Enum/*"],
+      "@Models/*": ["./src/Domain/Models/*"],
+      "@IRepository/*": ["./src/Domain/Repository/*"],
+
+      "@Api/*": ["./src/Infrastructure/Api/*"],
+      "@Database/*": ["./src/Infrastructure/Database/*"],
+      "@Language/*": ["./src/Infrastructure/Language/*"],
+      "@Repository/*": ["./src/Infrastructure/Repository/*"],
+
+      "@Components/*": ["./src/Presentation/Components/*"],
+      "@Hooks/*": ["./src/Presentation/Hooks/*"],
+      "@Navigation/*": ["./src/Presentation/Navigation/*"],
+      "@Screens/*": ["./src/Presentation/Screens/*"],
+      "@Themes/*": ["./src/Presentation/Themes/*"],
+
+      "@Shared/*": ["src/Shared/*"],
+
+      "@Formatters/*": ["src/Utils/Formatters/*"],
+      "@Helpers/*": ["src/Utils/Helpers/*"],
+      "@Validators/*": ["src/Utils/Validators/*"]
+    },
+    // "typeRoots": ["./env.d.ts"]
+  }
 }

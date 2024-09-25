@@ -1,0 +1,13 @@
+{
+    "a-file-icon-vscode.activeIconPacks": [
+        "angular",
+        "ngrx",
+        "nest",
+        "react",
+        "redux",
+        "rails"
+    ],
+    "cSpell.words": [
+        "initalize"
+    ]
+}

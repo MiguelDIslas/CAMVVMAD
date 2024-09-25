@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SafeArea Debe retornar los colores personalizados, un background claro y texto obscuro 1`] = `
+<RCTSafeAreaView
+  backgroundColor="#E16428"
+  style={
+    {
+      "backgroundColor": "#E16428",
+      "flexBasis": 0,
+      "flexGrow": 1,
+      "flexShrink": 1,
+      "paddingTop": 0,
+    }
+  }
+  testID="safe-area"
+/>
+`;
+
+exports[`SafeArea Debe retornar los colores por defecto, un background obscuro y texto claro 1`] = `
+<RCTSafeAreaView
+  style={
+    {
+      "backgroundColor": "#272121",
+      "flexBasis": 0,
+      "flexGrow": 1,
+      "flexShrink": 1,
+      "paddingTop": 0,
+    }
+  }
+  testID="safe-area"
+/>
+`;

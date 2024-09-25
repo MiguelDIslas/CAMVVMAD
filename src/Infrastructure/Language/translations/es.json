@@ -1,0 +1,12 @@
+{
+  "continue": "Continuar",
+  "login": "Iniciar sesión",
+  "greeting": {
+    "user": "Hola, {name}",
+    "morning": "Buenos días",
+    "afternoon": "Buenas tardes",
+    "evening": "Buenas noches",
+    "night": "Buenas noches"
+  },
+  "loading": "Cargando..."
+}
