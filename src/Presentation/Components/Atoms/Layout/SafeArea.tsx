@@ -10,7 +10,7 @@ type SafeAreaProps = {
 };
 
 /**
- * Componente que renderiza un SafeAreaView con un color de fondo personalizado. 
+ * Componente que renderiza un SafeAreaView con un color de fondo personalizado.
  * Si es Android, se toma en cuenta el StatusBar.
  */
 const SafeArea = styled(SafeAreaView)<SafeAreaProps>`

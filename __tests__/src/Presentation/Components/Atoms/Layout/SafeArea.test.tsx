@@ -17,19 +17,14 @@ describe('SafeArea', () => {
     expect(toJSON()).toHaveStyle({backgroundColor: myTheme.colors.darker});
   });
 
-
   it('Debe retornar los colores personalizados, un background claro y texto obscuro', () => {
     const {toJSON} = render(
       <ThemeProvider theme={myTheme}>
-        <SafeArea
-          testID="safe-area"
-          backgroundColor={myTheme.colors.orange}
-        />
+        <SafeArea testID="safe-area" backgroundColor={myTheme.colors.orange} />
       </ThemeProvider>,
     );
 
     expect(toJSON()).toMatchSnapshot();
     expect(toJSON()).toHaveStyle({backgroundColor: myTheme.colors.orange});
   });
-
 });

@@ -16,5 +16,5 @@ export default function useSplashViewModel() {
     return () => clearTimeout(timer);
   }, [navigation]);
 
-    return {loadingMessage};
+  return {loadingMessage};
 }

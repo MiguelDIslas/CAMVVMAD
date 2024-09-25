@@ -19,6 +19,5 @@ declare module 'styled-components/native' {
     fontSize: FontSize;
   }
 
-
   export interface DefaultTheme extends ThemeArgument {}
 }

@@ -14,16 +14,14 @@ export const resources = {
   },
 };
 
-i18n
-  .use(initReactI18next)
-  .init({
-    resources,
-    compatibilityJSON: 'v3',
-    lng: LanguageEnum.ES,
-    fallbackLng: LanguageEnum.ES,
-    interpolation: {
-      escapeValue: false,
-    },
-  });
+i18n.use(initReactI18next).init({
+  resources,
+  compatibilityJSON: 'v3',
+  lng: LanguageEnum.ES,
+  fallbackLng: LanguageEnum.ES,
+  interpolation: {
+    escapeValue: false,
+  },
+});
 
 export default i18n;

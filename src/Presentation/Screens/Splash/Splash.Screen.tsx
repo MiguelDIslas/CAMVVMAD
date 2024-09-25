@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { LoadingMessage } from './Splash.Styles';
+import {LoadingMessage} from './Splash.Styles';
 import useSplashViewModel from './Splash.ViewModel';
 
 import Logo from '@Components/Atoms/Layout/Logo';
