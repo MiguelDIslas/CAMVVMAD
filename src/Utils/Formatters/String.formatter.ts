@@ -17,6 +17,18 @@ export const capitalizeFirstLetterTrim = (str: string): string => {
 };
 
 /**
+ * Método para capitalizar la primera letra de cada palabra de una cadena de texto
+ * @param str Cadena de texto a capitalizar
+ * @returns Cadena de texto con la primera letra de cada palabra en mayúscula
+ */
+export const textToCapitalizedEachWord = (str: string): string => {
+  return str
+    .split(' ')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+    .join(' ');
+};
+
+/**
  * Método para truncar una cadena de texto a un número máximo de caracteres
  * @param str Cadena de texto a truncar
  * @param maxLength Número máximo de caracteres

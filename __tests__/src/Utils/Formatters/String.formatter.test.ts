@@ -1,6 +1,7 @@
 import {
   truncateString,
   capitalizeFirstLetter,
+  textToCapitalizedEachWord,
   capitalizeFirstLetterTrim,
 } from '@Formatters/String.formatter';
 
@@ -9,6 +10,12 @@ describe('String.formatter', () => {
     it('Debe convertir la primera letra como mayúscula', () => {
       expect(capitalizeFirstLetter('click')).toBe('Click');
       expect(capitalizeFirstLetter('  click')).toBe('  click');
+    });
+  });
+
+  describe('textToCapitalizedEachWord', () => {
+    it('Debe convertir la primera letra de cada palabra como mayúscula', () => {
+      expect(textToCapitalizedEachWord('click here')).toBe('Click Here');
     });
   });
 

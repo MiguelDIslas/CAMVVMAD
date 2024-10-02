@@ -1,0 +1,22 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "1.- Init",
+  "steps": [
+    {
+      "file": "package.json",
+      "description": "El proyecto utiliza manejador de dependencias yarn, a fecha 25 de septiembre la versión que se ejecutó fue con node 20.11. \n\nAntes de realizar un yarn install podrías ejecutar un yarn cache clean --force para limpiar todo el caché en caso que ya hayas trabajado con el repo.",
+      "line": 5
+    },
+    {
+      "file": ".env.example",
+      "description": "Automáticamente se copiarán el archivo de .env después de realizar un yarn install, favor de no modificar .gitignore para agregar .env\n\nVerificar/solicitar con líder variables de entorno.",
+      "line": 1
+    },
+    {
+      "file": "src/Domain/Entities/Example.entity.ts",
+      "description": "El proyecto se encuentra estructurado con arquitectura limpia, la capa de dominio representa el núcleo de la lógica de negocio de la aplicación, abstraído de las implementaciones externas.\n\nEn el folder de Entities encontrarás definiciones de los objetos de negocio fundamentales y básicas que no requieran lógica dentro su instancia.\n\nCasos en los que se recomienda declarar una entidad:\n- Entidad que no requiera métodos dentro su instancia\n- Interfaces para arreglos de manipulación de datos\n\nA continuación se deja de refencia una imagen de clean architecture.\n\n ![alt text](https://www.milanjovanovic.tech/blogs/mnw_062/clean_architecture.png?imwidth=50)\n",
+      "line": 4
+    }
+  ],
+  "ref": "main"
+}
